@@ -3,14 +3,13 @@ CREATE DATABASE emp_trackDB;
 
 USE emp_trackDB;
 
-CREATE TABLE department (
+CREATE TABLE departments (
     id INT NOT NULL AUTO_INCREMENT,
     dept_name VARCHAR(30) NOT NULL,
     PRIMARY KEY (id)
-
 );
 
-CREATE TABLE role (
+CREATE TABLE roles (
     id INT NOT NULL AUTO_INCREMENT,
     title VARCHAR(30) NOT NULL,
     salary DECIMAL NOT NULL,
@@ -19,11 +18,12 @@ CREATE TABLE role (
 );
 
 
-CREATE TABLE employee (
+CREATE TABLE employees (
     id INT NOT NULL AUTO_INCREMENT,
     first_name VARCHAR(30) NOT NULL,
     last_name VARCHAR(30) NOT NULL,
     role_id INT NOT NULL,
-    manager_id INT,
+    manager_id INT default 0,
     PRIMARY KEY (id)
 );
+
