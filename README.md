@@ -6,7 +6,7 @@
 - [Links](#links)
 - [User Story](#user-story)
 - [Technology Used](#technology-used)
-- [Testing](#testing)
+- [Installation](#installation)
 - [Screenshots](#screenshots)
 - [Questions](#questions)
 
@@ -21,7 +21,7 @@ This Employee Tracker is a homework project to create an interface that makes it
 ## Links
 
 - [Github Repository](https://github.com/emacartoon/Employee-Tracker)
-- [Video Walkthrough]()
+- [Video Walkthrough](https://drive.google.com/file/d/1OE_ZolB_xcqFe8iKn8zEbuCQAQB0PsXJ/view)
 
 ## User Story
 
@@ -29,34 +29,32 @@ As a business owner I want to be able to view and manage the departments, roles,
 
 ## Technology Used
 
-React
 JavaScript
 Node.js 
-Axios
-Bootstrap
-Moment
+Inquirer
+MySQL
 
-## Testing
+## Installation
 
-In the project directory, using the terminal you can run:
+After cloning down the repository, you will want to open your terminal to run the program.
 
-#### `npm start`
+Then navigate the project directory, using the terminal you can run:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm i`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+to install all the Node modules. With your SQL server running, run db/schema.sql to create the proper database and tables. I have included a seeds.sql file to import some example data to manipulate for testing.
 
-#### `npm test`
+After that has completed, you may type:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `npm index.js`
+
+to run the app in the terminal. Follow the prompts to add and manipulate your employee data.
+
 
 ## Screenshots
 
-![Screenshot of Initial Page](./sshot/Screenshot.png)
-Screenshot - Initial Page
+![Screenshot of Initial Page](./sshot/Sshot.png)
+Screenshot
 
 
 
