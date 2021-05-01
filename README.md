@@ -53,7 +53,7 @@ to run the app in the terminal. Follow the prompts to add and manipulate your em
 
 ## Screenshots
 
-![Screenshot of Initial Page](./sshot/Sshot.png)
+![Screenshot of Initial Page](./SShot/Sshot.png)
 Screenshot
 
 
