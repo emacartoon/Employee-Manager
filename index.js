@@ -115,11 +115,6 @@ function viewAllEmployees() {
 // };
 
 async function addEmployee() {
-  const departments = await connection.query("SELECT * FROM departments");
-  const departmentChoices = departments.map(({ id, name }) => ({
-    name: name,
-    value: id,
-  }));
   const roles = await connection.query("SELECT * FROM roles");
   const roleChoices = roles.map(({ id, title }) => ({
     name: title,
@@ -135,12 +130,6 @@ async function addEmployee() {
       type: "input",
       name: "last_name",
       message: "Last name: ",
-    },
-    {
-      type: "list",
-      name: "department_id",
-      message: "Which department? ",
-      choices: departmentChoices,
     },
     {
       type: "list",
