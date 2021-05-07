@@ -1,4 +1,4 @@
-# Employee Tracker
+# Employee Manager
 
 ## Table of Contents
 
